@@ -171,6 +171,7 @@ module.exports = function (content) {
                       content: res[format]
                   }
                 );
+                console.log(pub,url);
                 urls[format] = (pub + url).replace(/\\/g, '/');
                 self.emitFile(url, res[format]);
             } else {
